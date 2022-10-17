@@ -12,28 +12,41 @@ function randomQuote() {
     document.getElementById("quote").innerHTML = quotes[j];
 }
 
-// Exercise 3b
-var imagesButton = [
-    'images/betonstraatsteen-6-cm-antraciet-komo.jpg',
-    'images/cottage-stones-30x60x4cm-somerset-grijs-zwart-3.jpg',
-    'images/cottage-stones-60x60x4cm-somerset-grijs-zwart-2.jpg'
-];
 
-var buttonIndex = 0;
+// Exercise 3b 
+var imagesButton = [ 
+    'images/1.gif', 
+    'images/2.gif', 
+    'images/3.gif',
+    'images/4.gif'
+]; 
 
-function nextPic() {
-    document.getElementById('slideshow').src = imagesButton[buttonIndex];
-    buttonIndex++;
-    console.log(buttonIndex);
+var nextIndex = 1;
+console.log(nextIndex);
 
-    if (buttonIndex == imagesButton.length) { 
-        buttonIndex = 0; 
-    } 
+function nextPic() { 
+    if (nextIndex == imagesButton.length) {
+        nextIndex = 0;
+    }
+    document.getElementById('slideshow').src = imagesButton[nextIndex]; 
+    nextIndex++; 
+    console.log(nextIndex); 
+} 
+
+function prevPic() {
+    if (nextIndex == 1) {
+        document.getElementById('slideshow').src = imagesButton[3];
+        nextIndex = imagesButton.length;
+        console.log(nextIndex);
+    } else {
+        nextIndex--;
+        document.getElementById('slideshow').src = imagesButton[nextIndex - 1];
+        console.log(nextIndex);
+    }
 }
 
 
 //Exercise 3c
-
 var imagesTimer = [
     'images/betonstraatsteen-6-cm-antraciet-komo.jpg',
     'images/cottage-stones-30x60x4cm-somerset-grijs-zwart-3.jpg',
