@@ -1,0 +1,43 @@
+1. Melon.js
+    Voordelen:
+    - Geen afhankelijkheden, support voor HTML 5 is genoeg
+    - Geen plugins nodig
+    - Beginners vriendelijk
+    - Opensource library
+
+    Nadelen:
+    - Weinig CPU gebruik
+
+2. PixiJS
+    Voordelen:
+    - 2D
+    - Gratis opensource library
+
+    Nadelen:
+    - Natuurkunde dingen niet ingebouwd
+
+3. Phaser
+    Voordelen:
+    - Support voor een groot aantal plugins
+    - Populair bij ontwikkelaars, dus je kan zeggen dat deze library aardig geschikt is
+    - Cross-platform
+
+    Nadelen:
+    -
+
+4. Babylon.js
+    Voordelen:
+    - Omgeving voor het testen inbegrepen
+
+    Nadelen:
+    - Niet echt een game engine rendering engine, specifiek gemaakt voor visualisatie
+    (Game maken is echter alsnog mogelijk)
+
+5. PlayCanvas WebGL Game Engine
+    Voordelen:
+    - Geen plugins nodig
+    - Makkelijk om de game te exporteren
+    - Natuurkunde makkelijk integreren
+
+    Nadelen:
+    - 3D
