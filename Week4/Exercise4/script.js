@@ -32,21 +32,21 @@ function getLeftOver() {
                 if (price > 0) {
                     console.log("The remaining amount of money needed is ", price, "cents");
                 } else {
-                    document.getElementById("label").innerHTML = "The waterbottle has been paid for succesfully!";
+                    document.getElementById("label").innerHTML = "The water bottle has been paid for succesfully!";
                 }
             } else if (money == 10) {
                 price = price - money;
                 if (price > 0) {
                     console.log("The remaining amount of money needed is ", price, "cents");
                 } else {
-                    document.getElementById("label").innerHTML = "The waterbottle has been paid for succesfully!";
+                    document.getElementById("label").innerHTML = "The water bottle has been paid for succesfully!";
                 }
             } else if (money == 25) {
                 price = price - money;
                 if (price > 0) {
                     console.log("The remaining amount of money needed is ", price, "cents");
                 } else {
-                    document.getElementById("label").innerHTML = "The waterbottle has been paid for succesfully!";
+                    document.getElementById("label").innerHTML = "The water bottle has been paid for succesfully!";
                 }
             } 
         } else {
@@ -57,9 +57,9 @@ function getLeftOver() {
     if (price == 0) {
         // Set the input field to read only when the water bottle has been paid for
         document.getElementById("money").readOnly = true;
-        document.getElementById("label").innerHTML = "The waterbottle has been paid for succesfully";
+        document.getElementById("label").innerHTML = "The water bottle has been paid for succesfully";
 
-        // Remove button when the waterbottle has been bought
+        // Remove button when the water bottle has been bought
         var button = document.getElementById("button");
         button.parentNode.removeChild(button);
 
@@ -69,7 +69,7 @@ function getLeftOver() {
         console.log("The amount of change is ", price * -1, "cents");
         document.getElementById("money").readOnly = true;
 
-        // Remove button when the waterbottle has been bought
+        // Remove button when the water bottle has been bought
         var button = document.getElementById("button");
         button.parentNode.removeChild(button);
     }
